@@ -1,0 +1,160 @@
+main{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "sari1 resim1 sari2 resim2"
+    "resim3 siyah1 resim4 siyah2"
+    "sari3 resim5 sari4 resim6"
+    "resim7 siyah3 resim8 siyah4";
+}
+div:nth-child(1){
+    grid-area: sari1;
+    background-color: yellow;
+}
+div:nth-child(2){
+    grid-area: resim1;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/McLaren1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div:nth-child(3){
+    grid-area: siyah1;
+    background-color: black;
+}
+div:nth-child(4){
+    grid-area: resim2;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/mclaren2.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div:nth-child(5){
+    grid-area: sari2;
+    background-color: yellow;
+}
+div:nth-child(6){
+    grid-area: resim3;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/mclaren3.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div:nth-child(7){
+    grid-area: siyah2;
+    background-color: black;
+}
+div:nth-child(8){
+    grid-area: resim4;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/mclaren4.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div:nth-child(9){
+    grid-area: sari3;
+    background-color: yellow;
+}
+div:nth-child(10){
+    grid-area: resim5;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/mclaren5.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div:nth-child(11){
+    grid-area: siyah3;
+    background-color: black;
+}
+div:nth-child(12){
+    grid-area: resim6;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/mclaren6.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div:nth-child(13){
+    grid-area: sari4;
+    background-color: yellow;
+}
+div:nth-child(14){
+    grid-area: resim7;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/mclaren7.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div:nth-child(15){
+    grid-area: siyah4;
+    background-color: black;
+}
+div:nth-child(16){
+    grid-area: resim8;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/mclaren8.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (min-width: 600px) and (max-width: 968px) {
+    main{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-template-areas: 
+        "sari1 resim1"
+        "resim2 siyah1"
+        "sari2 resim3"
+        "resim4 siyah2"
+        "sari3 resim5"
+        "resim6 siyah3"
+        "sari4 resim7"
+        "resim8 siyah4";
+    }
+}
+@media(max-width:600px){
+    main{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(16,1fr);
+        grid-template-areas: 
+        "sari1"
+        "resim1"
+        "siyah1"
+        "resim2"
+        "sari2"
+        "resim3"
+        "siyah2"
+        "resim4"
+        "sari3"
+        "resim5"
+        "siyah3"
+        "resim6"
+        "sari4"
+        "resim7"
+        "siyah4"
+        "resim8";
+    }
+}

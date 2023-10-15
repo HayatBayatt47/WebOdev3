@@ -1,0 +1,120 @@
+main{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    "resim1 baslik baslik resim2 resim2"
+    "makale1 makale2 makale3 makale4 makale5"
+    "makale6 makale6 makale7 makale7 makale7"
+    "makale8 makale9 makale10 makale11 makale12";
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 5fr 3fr 3fr 2fr;
+}
+main>*{
+    border: 1px solid black;
+}
+div:nth-child(1){
+    grid-area: resim1;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/McLaren9.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div:nth-child(2){
+    grid-area: baslik;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div:nth-child(3){
+    grid-area: resim2;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/mclaren10.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div:nth-child(4){
+    grid-area: makale1;
+}
+div:nth-child(5){
+    grid-area: makale2;
+}
+div:nth-child(6){
+    grid-area: makale3;
+}
+div:nth-child(7){
+    grid-area: makale4;
+}
+div:nth-child(8){
+    grid-area: makale5;
+}
+div:nth-child(9){
+    grid-area: makale6;
+}
+div:nth-child(10){
+    grid-area: makale7;
+}
+div:nth-child(11){
+    grid-area: makale8;
+}
+div:nth-child(12){
+    grid-area: makale9;
+}
+div:nth-child(13){
+    grid-area: makale10;
+}
+div:nth-child(14){
+    grid-area: makale11;
+}
+div:nth-child(15){
+    grid-area: makale12;
+}
+@media screen and (min-width:600px) and (max-width:1000px){
+    main{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-areas: 
+    "resim1 baslik"
+    "resim2 makale1"
+    "makale2 makale3"
+    "makale4 makale5"
+    "makale6 makale6"
+    "makale7 makale8"
+    "makale9 makale10"
+    "makale11 makale12";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(8,1fr);
+    }
+}
+@media(max-width:600px){
+    main{
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-areas: 
+        "resim1"
+        "baslik"
+        "resim2"
+        "makale1"
+        "makale2"
+        "makale3"
+        "makale4"
+        "makale5"
+        "makale6"
+        "makale6"
+        "makale7"
+        "makale8"
+        "makale9"
+        "makale10"
+        "makale11"
+        "makale12";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(16,1fr);
+    }
+}

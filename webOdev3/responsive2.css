@@ -1,0 +1,112 @@
+main{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-areas: 
+    "araba1 araba2 araba3 araba4"
+    "araba5 araba6 araba7 araba8";
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 25px;
+}
+main>*{
+    border: 3px solid black;
+}
+.buton{
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+}
+div:nth-child(1){
+    grid-area: araba1;
+    background-image: url("/images/McLaren1.jpg");
+    background-size: 75% 40%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+div:nth-child(2){
+    grid-area: araba2;
+    background-image: url("/images/mclaren2.jpeg");
+    background-size: 75% 40%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+div:nth-child(3){
+    grid-area: araba3;
+    background-image: url("/images/mclaren3.jpeg");
+    background-size: 75% 40%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+div:nth-child(4){
+    grid-area: araba4;
+    background-image: url("/images/mclaren4.jpg");
+    background-size: 75% 40%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+div:nth-child(5){
+    grid-area: araba5;
+    background-image: url("/images/mclaren5.jpg");
+    background-size: 75% 40%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+div:nth-child(6){
+    grid-area: araba6;
+    background-image: url("/images/mclaren6.jpg");
+    background-size: 75% 40%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+div:nth-child(7){
+    grid-area: araba7;
+    background-image: url("/images/mclaren7.jpg");
+    background-size: 75% 40%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+div:nth-child(8){
+    grid-area: araba8;
+    background-image: url("/images/mclaren8.jpeg");
+    background-size: 75% 40%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+@media screen and (min-width:600px) and (max-width:1000px) {
+    main{
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-areas: 
+        "araba1 araba2"
+        "araba3 araba4"
+        "araba5 araba6"
+        "araba7 araba8";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 25px;
+    }
+}
+@media(max-width:600px){
+    main{
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-areas: 
+        "araba1"
+        "araba2"
+        "araba3"
+        "araba4"
+        "araba5"
+        "araba6"
+        "araba7"
+        "araba8";
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(8,1fr);
+        gap: 25px;
+    }
+}
